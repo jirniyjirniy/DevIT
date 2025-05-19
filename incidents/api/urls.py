@@ -1,6 +1,6 @@
 from rest_framework.routers import DefaultRouter
 from django.urls import path, include
-from .views import IncidentViewSet
+from incidents.api.views import IncidentViewSet
 
 router = DefaultRouter()
 router.register(r'incidents', IncidentViewSet, basename='incident')

@@ -2,8 +2,8 @@ from rest_framework import viewsets
 from rest_framework.decorators import action
 from rest_framework.response import Response
 
-from .models import Incident
-from .serializers import IncidentSerializer
+from incidents.models import Incident
+from incidents.api.serializers import IncidentSerializer
 
 class IncidentViewSet(viewsets.ModelViewSet):
     queryset = Incident.objects.all()
